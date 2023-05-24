@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title EasyToDo
+    link(rel='stylesheet', href='/styles.css')
+  body
+    .container
+      h1 EasyToDo
+      form.task-form(action='/', method='POST')
+        input.task-input(type='text', name='title', placeholder='Enter task title')
+        button.task-submit(type='submit') Add Task
+      ul.task-list
+        each task in tasks
+          li.task-card
+            span.task-title= task.title
+            form.delete-form(action='/' + task._id + '/delete', method='POST')
+              button.delete-btn(type='submit') &#10005; Delete

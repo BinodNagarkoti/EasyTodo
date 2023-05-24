@@ -1,0 +1,77 @@
+/**
+ * styles.css
+ *
+ * @format
+ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.task-card .task-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-card .delete-form {
+    text-align: right;
+}
+
+.task-card .delete-form button {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-form input[type='text'] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.task-form button[type='submit'] {
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+}
